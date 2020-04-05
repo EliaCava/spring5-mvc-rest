@@ -5,6 +5,9 @@ import guru.springfamework.repositories.CategoryRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+/**
+ * Created by jt on 9/24/17.
+ */
 @Component
 public class Bootstrap implements CommandLineRunner {
 
@@ -36,6 +39,7 @@ public class Bootstrap implements CommandLineRunner {
         categoryRepository.save(fresh);
         categoryRepository.save(exotic);
         categoryRepository.save(nuts);
+
 
         System.out.println("Data loaded = " + categoryRepository.count());
     }
